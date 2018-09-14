@@ -9,15 +9,21 @@
 #import "ViewController.h"
 #import "Person.h"
 #import <objc/runtime.h>
+#import "UIImage+XZCategory.h"
+#import "NSObject+XZCategory.h"
+#import "Dog.h"
+#import "Fish.h"
 
 @interface ViewController ()
-
+@property(nonatomic,strong)UIImageView * imageView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"首页";
+    self.view.backgroundColor = [UIColor whiteColor];
     [Person run];
     [Person study];
     
@@ -31,13 +37,75 @@
     [Person run];
     [Person study];
     
+    [self.view addSubview:self.imageView];
+    
+    self.imageView.image = [UIImage imageNamed:@"xz_pic"];
+    
+    Person * person = [[Person alloc] init];
+    person.name = @"小白";
+    NSLog(@"name---%@",person.name);
+    
+    //获取Person类中所有成员变量的名字和类型
+    unsigned int outCount = 0;
+    Ivar * invars = class_copyIvarList([Person class], &outCount);
+    //遍历所有成员变量
+    for(int i=0;i<outCount;i++){
+        //取出i位置对应的成员变量
+        Ivar ivar = invars[i];
+        const char * name = ivar_getName(ivar);
+        const char * type = ivar_getTypeEncoding(ivar);
+        NSLog(@"成员变量名：%s 成员变量类型：%s",name,type);
+    }
+    free(invars);
+    
+    [self fishArchiver];
+    
+    [self archiver];
+    
 }
 
+-(void)archiver
+{
+     NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"temp.plist"];
+    Dog *dog = [[Dog alloc] init];
+    //归档
+    dog.leg = @"四条腿";
+    [NSKeyedArchiver archiveRootObject:dog toFile:path];
+    //解档
+    Dog * deDog = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    NSLog(@"leg---%@",deDog.leg);
+    NSLog(@"path---%@",path);
+    
+}
+
+-(void)fishArchiver
+{
+    NSString *path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"fish.plist"];
+    Fish *fish = [[Fish alloc] init];
+    //归档
+    fish.name = @"飞鱼";
+    [NSKeyedArchiver archiveRootObject:fish toFile:path];
+    //解档
+    Fish * deFish = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    NSLog(@"fish---%@",deFish.name);
+    NSLog(@"path---%@",path);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - lazy init
+@synthesize imageView = _imageView;
+-(UIImageView *)imageView
+{
+    if(_imageView == nil){
+        _imageView = [[UIImageView alloc] init];
+        _imageView.frame = CGRectMake(10, 150, self.view.frame.size.width-20.0f, 70.0f);
+        _imageView.backgroundColor = [UIColor whiteColor];
+    }
+    return _imageView;
+}
 
 @end

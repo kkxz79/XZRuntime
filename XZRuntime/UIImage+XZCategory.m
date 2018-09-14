@@ -19,13 +19,15 @@
     //开始交换实现方法
     method_exchangeImplementations(m1, m2);
 }
-
+/*
+ 用我们的名字调系统的方法，用系统的名字能调我们的方法
+ */
 +(UIImage*)xz_imageNamed:(NSString*)name
 {
     double version = [[UIDevice currentDevice].systemVersion doubleValue];
     if(version >= 7.0){
         // 如果系统版本是7.0以上，使用另外一套文件名结尾是‘_os7’的扁平化图片
-        name = [name stringByAppendingString:@"_os7"];
+        name = [name stringByAppendingString:@"_ios7"];
     }
     return [UIImage xz_imageNamed:name];
 }

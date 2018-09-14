@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface Person : NSObject
+@property(nonatomic,copy)NSString * sex;
+@property(nonatomic,assign)BOOL isOK;
+
 +(void)run;
 +(void)study;
 @end

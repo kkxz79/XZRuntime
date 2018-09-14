@@ -17,6 +17,11 @@
 		9B594FEF214A613600D97C1C /* XZRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FEE214A613600D97C1C /* XZRuntimeUITests.m */; };
 		9B594FFE214A625200D97C1C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FFD214A625200D97C1C /* Person.m */; };
 		9B595001214A64E800D97C1C /* UIImage+XZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B595000214A64E800D97C1C /* UIImage+XZCategory.m */; };
+		9BACD6B9214B590200A4977A /* xz_pic_ios7@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BACD6B8214B590200A4977A /* xz_pic_ios7@3x.png */; };
+		9BACD6BC214B5EF600A4977A /* NSObject+XZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6BB214B5EF600A4977A /* NSObject+XZCategory.m */; };
+		9BACD6C3214B819000A4977A /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6C2214B819000A4977A /* Fish.m */; };
+		9BACD6C6214BC02C00A4977A /* NSObject+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6C5214BC02C00A4977A /* NSObject+XZExtension.m */; };
+		9BACD6D0214BC3C800A4977A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6CF214BC3C800A4977A /* Dog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,16 @@
 		9B594FFD214A625200D97C1C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		9B594FFF214A64E800D97C1C /* UIImage+XZCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XZCategory.h"; sourceTree = "<group>"; };
 		9B595000214A64E800D97C1C /* UIImage+XZCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XZCategory.m"; sourceTree = "<group>"; };
+		9BACD6B8214B590200A4977A /* xz_pic_ios7@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xz_pic_ios7@3x.png"; sourceTree = "<group>"; };
+		9BACD6BA214B5EF600A4977A /* NSObject+XZCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XZCategory.h"; sourceTree = "<group>"; };
+		9BACD6BB214B5EF600A4977A /* NSObject+XZCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XZCategory.m"; sourceTree = "<group>"; };
+		9BACD6C1214B819000A4977A /* Fish.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
+		9BACD6C2214B819000A4977A /* Fish.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
+		9BACD6C4214BC02C00A4977A /* NSObject+XZExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XZExtension.h"; sourceTree = "<group>"; };
+		9BACD6C5214BC02C00A4977A /* NSObject+XZExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XZExtension.m"; sourceTree = "<group>"; };
+		9BACD6CE214BC3C800A4977A /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		9BACD6CF214BC3C800A4977A /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		9BACD6D1214BC57100A4977A /* XZDecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZDecode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +130,11 @@
 				9B594FFD214A625200D97C1C /* Person.m */,
 				9B594FFF214A64E800D97C1C /* UIImage+XZCategory.h */,
 				9B595000214A64E800D97C1C /* UIImage+XZCategory.m */,
+				9BACD6BA214B5EF600A4977A /* NSObject+XZCategory.h */,
+				9BACD6BB214B5EF600A4977A /* NSObject+XZCategory.m */,
+				9BACD6C0214B815F00A4977A /* Encode */,
+				9BACD6BF214B815F00A4977A /* DictMode */,
+				9BACD6B8214B590200A4977A /* xz_pic_ios7@3x.png */,
 				9B594FD0214A612D00D97C1C /* Main.storyboard */,
 				9B594FD3214A613600D97C1C /* Assets.xcassets */,
 				9B594FD5214A613600D97C1C /* LaunchScreen.storyboard */,
@@ -140,6 +160,27 @@
 				9B594FF0214A613600D97C1C /* Info.plist */,
 			);
 			path = XZRuntimeUITests;
+			sourceTree = "<group>";
+		};
+		9BACD6BF214B815F00A4977A /* DictMode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DictMode;
+			sourceTree = "<group>";
+		};
+		9BACD6C0214B815F00A4977A /* Encode */ = {
+			isa = PBXGroup;
+			children = (
+				9BACD6C1214B819000A4977A /* Fish.h */,
+				9BACD6C2214B819000A4977A /* Fish.m */,
+				9BACD6C4214BC02C00A4977A /* NSObject+XZExtension.h */,
+				9BACD6C5214BC02C00A4977A /* NSObject+XZExtension.m */,
+				9BACD6CE214BC3C800A4977A /* Dog.h */,
+				9BACD6CF214BC3C800A4977A /* Dog.m */,
+				9BACD6D1214BC57100A4977A /* XZDecode.h */,
+			);
+			path = Encode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +288,7 @@
 			files = (
 				9B594FD7214A613600D97C1C /* LaunchScreen.storyboard in Resources */,
 				9B594FD4214A613600D97C1C /* Assets.xcassets in Resources */,
+				9BACD6B9214B590200A4977A /* xz_pic_ios7@3x.png in Resources */,
 				9B594FD2214A612D00D97C1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +314,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BACD6D0214BC3C800A4977A /* Dog.m in Sources */,
 				9B594FCF214A612D00D97C1C /* ViewController.m in Sources */,
+				9BACD6C3214B819000A4977A /* Fish.m in Sources */,
 				9B595001214A64E800D97C1C /* UIImage+XZCategory.m in Sources */,
+				9BACD6C6214BC02C00A4977A /* NSObject+XZExtension.m in Sources */,
 				9B594FDA214A613600D97C1C /* main.m in Sources */,
 				9B594FFE214A625200D97C1C /* Person.m in Sources */,
 				9B594FCC214A612D00D97C1C /* AppDelegate.m in Sources */,
+				9BACD6BC214B5EF600A4977A /* NSObject+XZCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

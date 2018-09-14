@@ -17,4 +17,8 @@
 {
     NSLog(@"学习");
 }
+
+@synthesize sex = _sex;
+@synthesize isOK = _isOK;
+
 @end
