@@ -9,5 +9,12 @@
 #import "Person.h"
 
 @implementation Person
-
++(void)run
+{
+    NSLog(@"跑");
+}
++(void)study
+{
+    NSLog(@"学习");
+}
 @end

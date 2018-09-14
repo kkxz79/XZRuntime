@@ -15,6 +15,8 @@
 		9B594FDA214A613600D97C1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FD9214A613600D97C1C /* main.m */; };
 		9B594FE4214A613600D97C1C /* XZRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FE3214A613600D97C1C /* XZRuntimeTests.m */; };
 		9B594FEF214A613600D97C1C /* XZRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FEE214A613600D97C1C /* XZRuntimeUITests.m */; };
+		9B594FFE214A625200D97C1C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FFD214A625200D97C1C /* Person.m */; };
+		9B595001214A64E800D97C1C /* UIImage+XZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B595000214A64E800D97C1C /* UIImage+XZCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		9B594FEA214A613600D97C1C /* XZRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XZRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B594FEE214A613600D97C1C /* XZRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XZRuntimeUITests.m; sourceTree = "<group>"; };
 		9B594FF0214A613600D97C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B594FFC214A625200D97C1C /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9B594FFD214A625200D97C1C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9B594FFF214A64E800D97C1C /* UIImage+XZCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XZCategory.h"; sourceTree = "<group>"; };
+		9B595000214A64E800D97C1C /* UIImage+XZCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XZCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				9B594FCB214A612D00D97C1C /* AppDelegate.m */,
 				9B594FCD214A612D00D97C1C /* ViewController.h */,
 				9B594FCE214A612D00D97C1C /* ViewController.m */,
+				9B594FFC214A625200D97C1C /* Person.h */,
+				9B594FFD214A625200D97C1C /* Person.m */,
+				9B594FFF214A64E800D97C1C /* UIImage+XZCategory.h */,
+				9B595000214A64E800D97C1C /* UIImage+XZCategory.m */,
 				9B594FD0214A612D00D97C1C /* Main.storyboard */,
 				9B594FD3214A613600D97C1C /* Assets.xcassets */,
 				9B594FD5214A613600D97C1C /* LaunchScreen.storyboard */,
@@ -263,7 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B594FCF214A612D00D97C1C /* ViewController.m in Sources */,
+				9B595001214A64E800D97C1C /* UIImage+XZCategory.m in Sources */,
 				9B594FDA214A613600D97C1C /* main.m in Sources */,
+				9B594FFE214A625200D97C1C /* Person.m in Sources */,
 				9B594FCC214A612D00D97C1C /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
