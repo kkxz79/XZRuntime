@@ -13,6 +13,9 @@
 #import "NSObject+XZCategory.h"
 #import "Dog.h"
 #import "Fish.h"
+#import "User.h"
+#import "NSObject+JSONExtension.h"
+#import "Book.h"
 
 @interface ViewController ()
 @property(nonatomic,strong)UIImageView * imageView;
@@ -60,7 +63,9 @@
     
     [self fishArchiver];
     
-    [self archiver];
+    //[self archiver];
+    
+    [self json];
     
 }
 
@@ -90,6 +95,28 @@
     NSLog(@"fish---%@",deFish.name);
     NSLog(@"path---%@",path);
 }
+
+//字典转模型
+-(void)json
+{
+    NSString * path = [[NSBundle mainBundle] pathForResource:@"model.json" ofType:nil];
+    NSData * jsonData = [NSData dataWithContentsOfFile:path];
+    NSDictionary * json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:NULL];
+    User * user = [User objectWithDict:json];
+    NSLog(@"#username# :%@",user.name);
+    
+    Cat * cat = user.cat;
+    NSLog(@"#catname# :%@",cat.name);
+    
+    FishTwo * fish = cat.fish;
+    NSLog(@"#fishname#:%@",fish.name);
+    
+    Book * book = user.books[0];
+    NSLog(@"#name# :%@",book.name);
+    NSLog(@"#publisher# :%@",book.publisher);
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

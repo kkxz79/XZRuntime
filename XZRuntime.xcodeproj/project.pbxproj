@@ -17,6 +17,12 @@
 		9B594FEF214A613600D97C1C /* XZRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FEE214A613600D97C1C /* XZRuntimeUITests.m */; };
 		9B594FFE214A625200D97C1C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B594FFD214A625200D97C1C /* Person.m */; };
 		9B595001214A64E800D97C1C /* UIImage+XZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B595000214A64E800D97C1C /* UIImage+XZCategory.m */; };
+		9B7EC28D214F48AA0045AF31 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7EC28C214F48AA0045AF31 /* Book.m */; };
+		9B7EC290214F49730045AF31 /* FishTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7EC28F214F49730045AF31 /* FishTwo.m */; };
+		9B7EC293214F49EB0045AF31 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7EC292214F49EB0045AF31 /* Cat.m */; };
+		9B7EC296214F4AB80045AF31 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7EC295214F4AB80045AF31 /* User.m */; };
+		9B7EC299214F4C010045AF31 /* NSObject+JSONExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7EC298214F4C010045AF31 /* NSObject+JSONExtension.m */; };
+		9B7EC29B214F53540045AF31 /* model.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B7EC29A214F53530045AF31 /* model.json */; };
 		9BACD6B9214B590200A4977A /* xz_pic_ios7@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BACD6B8214B590200A4977A /* xz_pic_ios7@3x.png */; };
 		9BACD6BC214B5EF600A4977A /* NSObject+XZCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6BB214B5EF600A4977A /* NSObject+XZCategory.m */; };
 		9BACD6C3214B819000A4977A /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6C2214B819000A4977A /* Fish.m */; };
@@ -62,6 +68,17 @@
 		9B594FFD214A625200D97C1C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		9B594FFF214A64E800D97C1C /* UIImage+XZCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+XZCategory.h"; sourceTree = "<group>"; };
 		9B595000214A64E800D97C1C /* UIImage+XZCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XZCategory.m"; sourceTree = "<group>"; };
+		9B7EC28B214F48AA0045AF31 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		9B7EC28C214F48AA0045AF31 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		9B7EC28E214F49730045AF31 /* FishTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FishTwo.h; sourceTree = "<group>"; };
+		9B7EC28F214F49730045AF31 /* FishTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FishTwo.m; sourceTree = "<group>"; };
+		9B7EC291214F49EB0045AF31 /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		9B7EC292214F49EB0045AF31 /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		9B7EC294214F4AB80045AF31 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		9B7EC295214F4AB80045AF31 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		9B7EC297214F4C010045AF31 /* NSObject+JSONExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONExtension.h"; sourceTree = "<group>"; };
+		9B7EC298214F4C010045AF31 /* NSObject+JSONExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONExtension.m"; sourceTree = "<group>"; };
+		9B7EC29A214F53530045AF31 /* model.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = model.json; sourceTree = "<group>"; };
 		9BACD6B8214B590200A4977A /* xz_pic_ios7@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xz_pic_ios7@3x.png"; sourceTree = "<group>"; };
 		9BACD6BA214B5EF600A4977A /* NSObject+XZCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+XZCategory.h"; sourceTree = "<group>"; };
 		9BACD6BB214B5EF600A4977A /* NSObject+XZCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XZCategory.m"; sourceTree = "<group>"; };
@@ -165,6 +182,17 @@
 		9BACD6BF214B815F00A4977A /* DictMode */ = {
 			isa = PBXGroup;
 			children = (
+				9B7EC297214F4C010045AF31 /* NSObject+JSONExtension.h */,
+				9B7EC298214F4C010045AF31 /* NSObject+JSONExtension.m */,
+				9B7EC28B214F48AA0045AF31 /* Book.h */,
+				9B7EC28C214F48AA0045AF31 /* Book.m */,
+				9B7EC28E214F49730045AF31 /* FishTwo.h */,
+				9B7EC28F214F49730045AF31 /* FishTwo.m */,
+				9B7EC291214F49EB0045AF31 /* Cat.h */,
+				9B7EC292214F49EB0045AF31 /* Cat.m */,
+				9B7EC294214F4AB80045AF31 /* User.h */,
+				9B7EC295214F4AB80045AF31 /* User.m */,
+				9B7EC29A214F53530045AF31 /* model.json */,
 			);
 			path = DictMode;
 			sourceTree = "<group>";
@@ -288,6 +316,7 @@
 			files = (
 				9B594FD7214A613600D97C1C /* LaunchScreen.storyboard in Resources */,
 				9B594FD4214A613600D97C1C /* Assets.xcassets in Resources */,
+				9B7EC29B214F53540045AF31 /* model.json in Resources */,
 				9BACD6B9214B590200A4977A /* xz_pic_ios7@3x.png in Resources */,
 				9B594FD2214A612D00D97C1C /* Main.storyboard in Resources */,
 			);
@@ -314,6 +343,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7EC296214F4AB80045AF31 /* User.m in Sources */,
+				9B7EC293214F49EB0045AF31 /* Cat.m in Sources */,
+				9B7EC28D214F48AA0045AF31 /* Book.m in Sources */,
+				9B7EC299214F4C010045AF31 /* NSObject+JSONExtension.m in Sources */,
 				9BACD6D0214BC3C800A4977A /* Dog.m in Sources */,
 				9B594FCF214A612D00D97C1C /* ViewController.m in Sources */,
 				9BACD6C3214B819000A4977A /* Fish.m in Sources */,
@@ -322,6 +355,7 @@
 				9B594FDA214A613600D97C1C /* main.m in Sources */,
 				9B594FFE214A625200D97C1C /* Person.m in Sources */,
 				9B594FCC214A612D00D97C1C /* AppDelegate.m in Sources */,
+				9B7EC290214F49730045AF31 /* FishTwo.m in Sources */,
 				9BACD6BC214B5EF600A4977A /* NSObject+XZCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
