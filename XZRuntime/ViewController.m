@@ -16,6 +16,7 @@
 #import "User.h"
 #import "NSObject+JSONExtension.h"
 #import "Book.h"
+#import "TestObject.h"
 
 @interface ViewController ()
 @property(nonatomic,strong)UIImageView * imageView;
@@ -66,6 +67,10 @@
     //[self archiver];
     
     [self json];
+    
+    TestObject * testOjc = [[TestObject alloc] init];
+    [testOjc eatFish];
+    [testOjc eatBone];
     
 }
 

@@ -28,6 +28,9 @@
 		9BACD6C3214B819000A4977A /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6C2214B819000A4977A /* Fish.m */; };
 		9BACD6C6214BC02C00A4977A /* NSObject+XZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6C5214BC02C00A4977A /* NSObject+XZExtension.m */; };
 		9BACD6D0214BC3C800A4977A /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BACD6CF214BC3C800A4977A /* Dog.m */; };
+		9BC5CE8021538EAE000166DD /* Cats.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5CE7F21538EAE000166DD /* Cats.m */; };
+		9BC5CE8321538EBA000166DD /* Dogs.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5CE8221538EBA000166DD /* Dogs.m */; };
+		9BC5CE8621538EDB000166DD /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC5CE8521538EDB000166DD /* TestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +92,12 @@
 		9BACD6CE214BC3C800A4977A /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		9BACD6CF214BC3C800A4977A /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		9BACD6D1214BC57100A4977A /* XZDecode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XZDecode.h; sourceTree = "<group>"; };
+		9BC5CE7E21538EAE000166DD /* Cats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cats.h; sourceTree = "<group>"; };
+		9BC5CE7F21538EAE000166DD /* Cats.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cats.m; sourceTree = "<group>"; };
+		9BC5CE8121538EBA000166DD /* Dogs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dogs.h; sourceTree = "<group>"; };
+		9BC5CE8221538EBA000166DD /* Dogs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dogs.m; sourceTree = "<group>"; };
+		9BC5CE8421538EDB000166DD /* TestObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		9BC5CE8521538EDB000166DD /* TestObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +158,7 @@
 				9B595000214A64E800D97C1C /* UIImage+XZCategory.m */,
 				9BACD6BA214B5EF600A4977A /* NSObject+XZCategory.h */,
 				9BACD6BB214B5EF600A4977A /* NSObject+XZCategory.m */,
+				9BC5CE7D21538E7F000166DD /* MsgForward */,
 				9BACD6C0214B815F00A4977A /* Encode */,
 				9BACD6BF214B815F00A4977A /* DictMode */,
 				9BACD6B8214B590200A4977A /* xz_pic_ios7@3x.png */,
@@ -209,6 +219,19 @@
 				9BACD6D1214BC57100A4977A /* XZDecode.h */,
 			);
 			path = Encode;
+			sourceTree = "<group>";
+		};
+		9BC5CE7D21538E7F000166DD /* MsgForward */ = {
+			isa = PBXGroup;
+			children = (
+				9BC5CE7E21538EAE000166DD /* Cats.h */,
+				9BC5CE7F21538EAE000166DD /* Cats.m */,
+				9BC5CE8121538EBA000166DD /* Dogs.h */,
+				9BC5CE8221538EBA000166DD /* Dogs.m */,
+				9BC5CE8421538EDB000166DD /* TestObject.h */,
+				9BC5CE8521538EDB000166DD /* TestObject.m */,
+			);
+			path = MsgForward;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,9 +376,12 @@
 				9B595001214A64E800D97C1C /* UIImage+XZCategory.m in Sources */,
 				9BACD6C6214BC02C00A4977A /* NSObject+XZExtension.m in Sources */,
 				9B594FDA214A613600D97C1C /* main.m in Sources */,
+				9BC5CE8021538EAE000166DD /* Cats.m in Sources */,
 				9B594FFE214A625200D97C1C /* Person.m in Sources */,
+				9BC5CE8621538EDB000166DD /* TestObject.m in Sources */,
 				9B594FCC214A612D00D97C1C /* AppDelegate.m in Sources */,
 				9B7EC290214F49730045AF31 /* FishTwo.m in Sources */,
+				9BC5CE8321538EBA000166DD /* Dogs.m in Sources */,
 				9BACD6BC214B5EF600A4977A /* NSObject+XZCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
