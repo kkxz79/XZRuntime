@@ -12,10 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TestObject : NSObject<CatProtocol,DogProtocol>
+@interface TestObject : NSObject<CatProtocol>
 @property(nonatomic,strong)Cats * cat;
 @property(nonatomic,strong)Dogs * dog;
--(id)forwardingTargetForSelector:(SEL)aSelector;
+
+-(void)test;
+
 @end
 
 NS_ASSUME_NONNULL_END

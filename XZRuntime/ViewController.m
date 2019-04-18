@@ -45,6 +45,7 @@
     
     self.imageView.image = [UIImage imageNamed:@"xz_pic"];
     
+    //关联对象，给分类添加属性
     Person * person = [[Person alloc] init];
     person.name = @"小白";
     NSLog(@"name---%@",person.name);
@@ -62,15 +63,26 @@
     }
     free(invars);
     
+    //基于运行时的归档和解档
     [self fishArchiver];
     
     //[self archiver];
     
+    //字典转模型 json串的解析
     [self json];
     
+    //消息转发机制
     TestObject * testOjc = [[TestObject alloc] init];
-    [testOjc eatFish];
-    [testOjc eatBone];
+    
+    //在test方法定义了，但是没有实现的情况下，系统会抛错
+    /*
+     '-[TestObject test]: unrecognized selector sent to instance 0x2811702e0'
+     */
+    [testOjc test];
+    
+    //可以在动态解析方法阶段，来做处理，从而防止crash 调用resovleInstanceMethod:方法
+    
+    
     
 }
 

@@ -9,7 +9,7 @@
 #import "Dogs.h"
 
 @implementation Dogs
--(void)eatBone
+-(void)test
 {
     NSLog(@"Dog Eat Bone");
 }

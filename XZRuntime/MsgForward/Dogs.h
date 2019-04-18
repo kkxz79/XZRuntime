@@ -9,12 +9,9 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-@protocol DogProtocol <NSObject>
--(void)eatBone;
-@end
 
-@interface Dogs : NSObject<DogProtocol>
-
+@interface Dogs : NSObject
+-(void)test;
 @end
 
 NS_ASSUME_NONNULL_END
